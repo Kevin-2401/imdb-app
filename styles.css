@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#searchResults {
+    margin-bottom: 20px;
+}
+
+.movie {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.movie:hover {
+    background-color: #eaeaea;
+}
+
+.movie img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.movie h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.movie p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.favorite {
+    position: absolute;
+    top: 50%; /* Align vertically */
+    right: 10px; /* Align to the right side */
+    transform: translateY(-50%); /* Center vertically */
+    color: #f00;
+    font-size: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.favorite:hover {
+    color: #c00;
+}
+
+#favoriteMovies {
+    list-style-type: none;
+    padding: 0;
+}
+
+#favoriteMovies li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#favoriteMovies li:last-child {
+    margin-bottom: 0;
+}
